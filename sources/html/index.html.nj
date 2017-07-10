@@ -1,0 +1,13 @@
+---
+title: Home
+description: This is homepage
+keywords: keywords, for homepage
+---
+
+{% extends '_master.html.nj' %}
+
+{% block body -%}
+    <h1>Hello world!</h1>
+    <p>You can get started with source code for this file located at <code>source/html/index.html.nj</code>.</p>
+    <button id="take-me-button" type="button" role="button">Take me there&hellip;</button>
+{%- endblock %}
