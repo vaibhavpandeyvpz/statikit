@@ -5,50 +5,22 @@ Tiny but modern scaffolding for protyping website designs, creating static websi
 After all, everything mentioned is powered by [Node.js](https://nodejs.org/).
 
 ### Get started
-First make sure you have [Yarn](https://yarnpkg.com/) installed globally (read
-[here](https://yarnpkg.com/en/docs/install) to know how). Then `git clone` this repository, `cd` into it and run below
-command:
+First make sure you have [Yeoman](http://yeoman.io/) installed globally, then install the `generator-statikit` by
+running below command:
 
 ```shell
-yarn install
+npm i -g generator-statikit
 ```
 
-This will download and install all **development** dependencies for your project.
-
-### Development
-
-All files you can are supposed to make changes to live inside **sources** directory. The output from these sources will
-be saved in a directory named **output**, contents of which can be safely deployed to the production server.
-
-To build actual site from **sources**, run below command in your project directory:
+You can then simply create a new project for your app, `cd` into it and run below command to scaffold your brand new
+project:
 
 ```shell
-npm run development # or 'npm run dev'
+yo statikit
 ```
 
-While you can always build your project by running above command anytime, a `watch` task is also there for ease.
-Once started, it will *watch for changes* in the **sources** directory and runs the appropriate build task automatically.
-To start it, just run below command in your project directory:
-
-```shell
-npm run watch
-```
-
-A task for starting a development server for testing locally is configured along in the `gulpfile.coffee`. To start it,
-run below command in your project directory:
-
-```shell
-npm run server
-```
-
-### Deployment
-
-I suggest running below command before deployment as it will not only compile, but **minify** all generated `css` and
-`js` files saving a lot on server bandwidth.
-
-```shell
-npm run production # or 'npm run prod'
-```
+### Usage
+Instructions on how to use the provided scaffold will be available in **README.md** file inside your project directory.
 
 License
 -------
