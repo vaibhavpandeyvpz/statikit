@@ -4,6 +4,10 @@ Tiny but modern scaffolding for protyping website designs, creating static websi
 [CoffeeScript](http://coffeescript.org/) for beautiful scripting and [SASS](http://sass-lang.com/) for easy styling.
 After all, everything mentioned is powered by [Node.js](https://nodejs.org/).
 
+[![Latest Version](https://img.shields.io/github/release/vaibhavpandeyvpz/statikit.svg?style=flat-square)](https://github.com/vaibhavpandeyvpz/statikit/releases)
+[![Downloads](https://img.shields.io/npm/dt/generator-statikit.svg?style=flat-square)](https://www.npmjs.com/package/generator-statikit)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
 ### Get started
 First make sure you have [Yeoman](http://yeoman.io/) installed globally, then install the `generator-statikit` by
 running below command:
