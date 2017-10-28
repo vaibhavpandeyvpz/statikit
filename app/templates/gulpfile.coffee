@@ -91,7 +91,7 @@ gulp.task 'js', () ->
       title: 'Statikit'
     .pipe connect.reload()
 
-gulp.task 'server', () ->
+gulp.task 'server', ['watch'], () ->
   connect.server {} =
     livereload: true
     root: 'output'
