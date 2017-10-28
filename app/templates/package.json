@@ -27,7 +27,6 @@
     "development": "cross-env NODE_ENV=development gulp build",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production gulp build",
-    "start": "gulp server",
-    "watch": "gulp watch"
+    "start": "gulp server"
   }
 }
