@@ -9,16 +9,8 @@ To build actual site from **sources**, run below command in your project directo
 npm run development # or 'npm run dev'
 ```
 
-While you can always build your project by running above command anytime, a `watch` task is also there for ease.
-Once started, it will *watch for changes* in the **sources** directory and runs the appropriate build task automatically.
-To start it, just run below command in your project directory:
-
-```shell
-npm run watch
-```
-
 A task for starting a development server for testing locally is configured along in the `gulpfile.coffee`. To start it,
-run below command in your project directory:
+run below command in your project directory. Once started, it will *watch for changes* in the **sources** directory and enable live-reloading:
 
 ```shell
 npm run start
