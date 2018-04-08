@@ -32,6 +32,8 @@ gulp.task 'build', ['css', 'html', 'js']
 
 gulp.task 'clean', () -> del 'output/**/*'
 
+gulp.task 'default', ['build', 'server', 'watch']
+
 gulp.task 'css', () ->
   gulp.src ['sources/css/*.scss', '!sources/css/_*.scss']
     .pipe plumber plumberr
@@ -91,7 +93,7 @@ gulp.task 'js', () ->
       title: 'Statikit'
     .pipe connect.reload()
 
-gulp.task 'server', ['watch'], () ->
+gulp.task 'server', () ->
   connect.server {} =
     livereload: true
     root: 'output'
