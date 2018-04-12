@@ -52,6 +52,7 @@ gulp.task 'css', () ->
     .pipe notify {} =
       icon: __dirname + '/icon.png'
       message: 'SCSS -> CSS has finished.'
+      onLast: true
       title: 'Statikit'
     .pipe connect.reload()
 
@@ -72,6 +73,7 @@ gulp.task 'html', () ->
     .pipe notify {} =
       icon: __dirname + '/icon.png'
       message: 'NUNJUCKS -> HTML has finished.'
+      onLast: true
       title: 'Statikit'
     .pipe connect.reload()
 
@@ -90,6 +92,7 @@ gulp.task 'js', () ->
     .pipe notify {} =
       icon: __dirname + '/icon.png'
       message: 'COFFEE -> JS has finished.'
+      onLast: true
       title: 'Statikit'
     .pipe connect.reload()
 
